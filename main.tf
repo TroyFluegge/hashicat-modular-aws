@@ -11,7 +11,7 @@ locals {
 }
 
 module "networking" {
-  source = "./modules/aws-webapp-networking"
+  source = "git::https://github.com/TroyFluegge/hashicat-modular-aws?ref=v1.0"
   region = var.region
   prefix = "${var.prefix}-${var.environment}"
   tags = local.common_tags
