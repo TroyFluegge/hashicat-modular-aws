@@ -96,6 +96,8 @@ resource "null_resource" "configure-cat-app" {
     inline = [
       "sudo add-apt-repository universe",
       "sudo apt -y update",
+      "sudo apt -y install apache2-bin",
+      "sudo apt -y install apache2-utils",
       "sudo apt -y install apache2",
       "sudo systemctl start apache2",
       "sudo chown -R ubuntu:ubuntu /var/www/html",
