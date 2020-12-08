@@ -33,9 +33,9 @@ variable "instance_type" {
   description = "Specifies the AWS instance type."
     type = map
   default = {
-    dev  = "n1-standard-1"
-    test = "n2-standard-2"
-    prod = "n2-standard-4"
+    dev  = "t2.micro"
+    test = "t2.small"
+    prod = "t2.medium"
   }
 }
 
